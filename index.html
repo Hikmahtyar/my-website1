@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trader's Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="candlestick-background"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">The Codex</a>
+            <div class="nav__actions">
+                <i class='bx bx-moon' id="theme-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Peta Konsep Pasar</h1>
+                <p class="hero-subtitle">Klik kartu untuk mengungkap setiap konsep trading.</p>
+            </div>
+        </section>
+
+        <section class="container gallery-section">
+            <div class="codex-gallery">
+                <div class="card-wrapper">
+                    <div class="codex-card" data-content="smc">
+                        <div class="card-content-wrapper">
+                            <img src="images/smc icon.gif" alt="SMC Icon">
+                            <h3>Smart Money Concept</h3>
+                            <p>Mengikuti jejak institusi besar.</p>
+                        </div>
+                    </div>
+                    <div class="codex-details">
+                        <div class="timeline-cv">
+                            <div class="timeline-item"><div class="timeline-content"><h3>Akumulasi/Distribusi</h3><p>Institusi besar secara diam-diam membeli atau menjual aset dalam jumlah besar.</p></div></div>
+                            <div class="timeline-item"><div class="timeline-content"><h3>Manipulasi (Liquidity Grab)</h3><p>Harga sengaja didorong menembus level kunci untuk memicu stop loss trader ritel.</p></div></div>
+                            <div class="timeline-item"><div class="timeline-content"><h3>Ekspansi (Tren Sebenarnya)</h3><p>Setelah likuiditas terkumpul, institusi mendorong harga dengan kuat menciptakan tren yang jelas.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="codex-card" data-content="technical">
+                        <div class="card-content-wrapper">
+                            <img src="images/teknikal icon.gif" alt="Technical Analysis Icon">
+                            <h3>Analisis Teknikal</h3>
+                            <p>Membaca pola harga & tren pasar.</p>
+                        </div>
+                    </div>
+                    <div class="codex-details">
+                        <div class="timeline-cv">
+                            <div class="timeline-item"><div class="timeline-content"><h3>Identifikasi Tren</h3><p>Menggunakan trendline atau moving average untuk menentukan arah umum pasar.</p></div></div>
+                            <div class="timeline-item"><div class="timeline-content"><h3>Support & Resistance</h3><p>Menentukan level-level harga psikologis di mana harga cenderung berhenti atau berbalik arah.</p></div></div>
+                            <div class="timeline-item"><div class="timeline-content"><h3>Pola & Indikator</h3><p>Membaca formasi candlestick dan menggunakan indikator (RSI, MACD) untuk konfirmasi sinyal.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="codex-card" data-content="fundamental">
+                         <div class="card-content-wrapper">
+                            <img src="images/fundamental icon.gif" alt="Fundamental Analysis Icon">
+                            <h3>Analisis Fundamental</h3>
+                            <p>Memahami kekuatan ekonomi.</p>
+                        </div>
+                    </div>
+                    <div class="codex-details">
+                        <div class="timeline-cv">
+                            <div class="timeline-item"><div class="timeline-content"><h3>Data Ekonomi Makro</h3><p>Menganalisis data penting seperti GDP, tingkat inflasi (CPI), dan data ketenagakerjaan (NFP).</p></div></div>
+                            <div class="timeline-item"><div class="timeline-content"><h3>Kebijakan Bank Sentral</h3><p>Memantau keputusan suku bunga dan pernyataan dari bank sentral yang sangat mempengaruhi nilai mata uang.</p></div></div>
+                            <div class="timeline-item"><div class="timeline-content"><h3>Geopolitik & Sentimen</h3><p>Memperhatikan peristiwa global dan sentimen umum pelaku pasar yang dapat menyebabkan volatilitas.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="focused-content-section container">
+            <div class="focused-card" id="indicator-card"><img src="images/performance_11726437.png" alt="Indicator Icon"><h3>Indikator Probabilitas</h3><p>Gunakan alat bantu untuk konfirmasi sinyal trading Anda.</p></div>
+        </section>
+    </main>
+
+    <div class="flip-section-container">
+        <div class="flip-section"><div class="flip-face flip-front"><button id="flip-to-contact" class="button-flip">Punya Pertanyaan?</button></div><div class="flip-face flip-back"><h2>Let's Talk</h2>
+            <form action="https://formspree.io/f/MASUKKAN_KODE_UNIK_ANDA" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <button id="flip-back" class="button-flip-back"><i class='bx bx-arrow-back'></i></button></div></div>
+    </div>
+    
+    <div class="modal-overlay" id="indicator-overlay"></div>
+    <div class="modal" id="indicator-modal"><button class="modal-close-btn">&times;</button><div class="modal-content"><h2>Indikator Probabilitas Tinggi</h2><p class="modal-subtitle">Alat-alat ini membantu mengukur sentimen pasar dan mengkonfirmasi potensi pergerakan harga.</p><ul class="indicator-list"><li><h4><i class='bx bx-slider-alt'></i> MACD</h4><p>Mengidentifikasi perubahan momentum dan arah tren dengan melihat hubungan antara dua moving average.</p></li><li><h4><i class='bx bx-tachometer'></i> RSI</h4><p>Mengukur kecepatan perubahan harga untuk mengevaluasi kondisi jenuh beli (overbought) atau jenuh jual (oversold).</p></li><li><h4><i class='bx bxs-band-aid'></i> Bollinger Bands</h4><p>Mengukur volatilitas pasar dan mengidentifikasi potensi level support dan resistance dinamis.</p></li></ul></div></div>
+
+    <footer class="footer"><p>The Trader's Codex by Hikmahtyar</p></footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
